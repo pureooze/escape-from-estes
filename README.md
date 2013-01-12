@@ -1,4 +1,3 @@
-escape-from-estes
-=================
+##Escape From Estes
 
-A text based adventure/puzzle game coded C++
+Coded in C++, play as a messenger attempting to escape from the city of Estes
