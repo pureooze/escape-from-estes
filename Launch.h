@@ -6,6 +6,7 @@ class Launch
 {
     public:
         Launch();
+        void startLevel();
     protected:
     private:
 };

@@ -1,7 +1,9 @@
-<intro>
+<INTRO>
+<MENU>
     Welcome to Escape from Estes!
     [1] New Game
     [2] Load Game
     [3] Options
     [4] Exit
-</intro>
+</MENU>
+</INTRO>

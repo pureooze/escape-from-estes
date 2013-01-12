@@ -1,25 +1,26 @@
 #include <iostream>
-#include <fstream>
+#include <string>
+#include <boost/algorithm/string.hpp>
 #include <stdio.h>
+
+#include "tinyxml2.h"
 #include "Launch.h"
 
 using namespace std;
+using namespace tinyxml2;
 
 Launch::Launch()
 {
-    char ans;
-    string line;
-    ifstream introXML("./xml/intro.xml");
+    int ans;
+    XMLDocument doc("");
+    doc.LoadFile( "xml/intro.xml" );
+    XMLText* textNode = doc.FirstChildElement( "INTRO" )->FirstChildElement( "MENU" )->FirstChild()->ToText();
+    string menu(textNode->Value());
+    boost::trim(menu); // removes all leading and trailing white spaces
+    printf("%s\n\n", menu.c_str());
+}
 
-    if (introXML.is_open())
-    {
-        while (introXML.good())
-        {
-            getline(introXML, line);
-            cout << line << endl;
-        }
-    }else
-        cout << "Cannot open file";
+void Launch::startLevel(int level)
+{
 
-    cin >> ans;
 }
