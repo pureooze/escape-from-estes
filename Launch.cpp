@@ -2,6 +2,7 @@
 #include <string>
 #include <boost/algorithm/string.hpp>
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "tinyxml2.h"
 #include "Launch.h"
@@ -11,7 +12,6 @@ using namespace tinyxml2;
 
 Launch::Launch()
 {
-    int ans;
     XMLDocument doc("");
     doc.LoadFile( "xml/intro.xml" );
     XMLText* textNode = doc.FirstChildElement( "INTRO" )->FirstChildElement( "MENU" )->FirstChild()->ToText();
@@ -20,7 +20,8 @@ Launch::Launch()
     printf("%s\n\n", menu.c_str());
 }
 
-void Launch::startLevel(int level)
+int Launch::startLevel(int level)
 {
-
+    char l2 = char(level);
+    printf("%d", l2);
 }

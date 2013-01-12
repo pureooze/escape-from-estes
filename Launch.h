@@ -1,14 +1,15 @@
 #ifndef LAUNCH_H
 #define LAUNCH_H
 
-
 class Launch
 {
     public:
         Launch();
-        void startLevel();
+        int startLevel(int level);
     protected:
     private:
+
+
 };
 
 #endif // LAUNCH_H
