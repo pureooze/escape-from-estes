@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include "Launch.h"
 
 using namespace std;
 
@@ -7,18 +8,6 @@ char gameStart();
 
 int main()
 {
-    gameStart();
+    Launch gameStart;
     return 0;
-}
-
-char gameStart()
-{
-
-    char ans;
-
-    printf("Welcome to Escape from Estes!\n");
-    printf("[1] New Game\n[2] Load Game\n[3] Options\n[4] Exit\n\n");
-
-    cin >> ans;
-    return ans;
 }

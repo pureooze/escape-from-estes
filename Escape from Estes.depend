@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1358009030 source:/home/gum/Documents/Programming/C++/Escape from Este/Escape from Estes/Launch.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	"Launch.h"
+
+1358008262 /home/gum/Documents/Programming/C++/Escape from Este/Escape from Estes/Launch.h
+
+1358008558 source:/home/gum/Documents/Programming/C++/Escape from Este/Escape from Estes/main.cpp
+	<iostream>
+	<stdio.h>
+	"Launch.h"
+
+1357742590 source:/home/gum/Documents/Programming/C++/Escape from Este/Escape from Estes/tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+
+1357742590 /home/gum/Documents/Programming/C++/Escape from Este/Escape from Estes/tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+
+1357742590 source:/home/gum/Documents/Programming/C++/Escape from Este/Escape from Estes/xmltest.cpp
+	"tinyxml2.h"
+	<cstdlib>
+	<cstring>
+	<ctime>
+	<direct.h>
+	<crtdbg.h>
+	<windows.h>
+	<sys/stat.h>
+
