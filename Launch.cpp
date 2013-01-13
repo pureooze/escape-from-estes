@@ -27,8 +27,8 @@ char* Launch::parseXML(char* tagA, char* tagB, char* location)
 }
 void Launch::readInput()
 {
-    std::cout << "Enter a name [LETTERS ONLY]: ";
     std::cin >> this->name;
+    std::cout << "Enter a name [LETTERS ONLY]: ";
 }
 
 short Launch::startLevel(short level)
