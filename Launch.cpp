@@ -13,6 +13,7 @@ using namespace tinyxml2;
 Launch::Launch()
 {
     parseXML("INTRO", "MENU", "xml/intro.xml");
+    std::cout << "Pick an option: ";
 }
 
 char* Launch::parseXML(char* tagA, char* tagB, char* location)
@@ -27,8 +28,8 @@ char* Launch::parseXML(char* tagA, char* tagB, char* location)
 }
 void Launch::readInput()
 {
-    std::cin >> this->name;
     std::cout << "Enter a name [LETTERS ONLY]: ";
+    std::cin >> this->name;
 }
 
 short Launch::startLevel(short level)

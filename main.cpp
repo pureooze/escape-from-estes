@@ -3,21 +3,26 @@
 #include <stdlib.h>
 #include "Launch.h"
 #include "tile.h"
+#include "dun/dun1.h"
 
 void clearScreen();
 void gameExit();
 char* gameNew();
-int ansCheck(int ans);
+//int ansCheck(int ans);
 
-Launch game;
+//begin the game, it is a globabl object because it is essentially the program
+//Launch game;
 
 int main()
 {
     int ans;
 
+    //check the users input and display the appropriate text
     std::cin >> ans;
-    ansCheck(ans);
-    game.startLevel(1);
+    clearScreen();
+    dun1 lev;
+    //ansCheck(ans);
+    //game.startLevel(1);
 
     return 0;
 }
@@ -41,25 +46,25 @@ void gameExit()
 //    return name;
 //}
 
-int ansCheck(int ans)
-{
-    switch(ans){
-        case 1:
-            clearScreen();
-            game.readInput();
-            clearScreen();
-            break;
-        case 2:
-            clearScreen();
-            break;
-        case 3:
-            clearScreen();
-            break;
-        case 4:
-            gameExit();
-            break;
-        default:
-            printf("ERROR: INVALID MENU SELECTION");
-            gameExit;
-    }
-}
+//int ansCheck(int ans)
+//{
+//    switch(ans){
+//        case 1:
+//            clearScreen();
+//            game.readInput();
+//            clearScreen();
+//            break;
+//        case 2:
+//            clearScreen();
+//            break;
+//        case 3:
+//            clearScreen();
+//            break;
+//        case 4:
+//            gameExit();
+//            break;
+//        default:
+//            printf("ERROR: INVALID MENU SELECTION");
+//            gameExit;
+//    }
+//}
