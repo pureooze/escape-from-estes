@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>1.txt</file>
+        <file>intro.txt</file>
+    </qresource>
+    <qresource prefix="/pic">
+        <file>parchment.jpg</file>
+    </qresource>
+</RCC>
