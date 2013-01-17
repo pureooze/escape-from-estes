@@ -1,7 +1,0 @@
-You are Jaem, a royal messenger from the capital who has travelled for weeks to the city of Estes. You carry a letter with the King's seal which must be delivered to the city's governor. After an exhausting trip, you are led through the gates, past the common folk making the day's trade. Your two horses are led away and stabled, for you are not alone. The roads are no safe in these troubled times so a mercenary by the name of Ralf was hired to protect you. As mercenaries do, Ralf heads for the taverns as soon as you are through the gates. You are relieved of your letter and are led to the dining hall where you are treated to dinner with the rest of the messengers.
-
------ 4 Hours Later ----
-You are woken by loud noises coming from the hallway outside your door. It appears to be a shouting match between two staff but in your daze you can't be sure. The bed is warm and inviting but there could be trouble brewing. What do you do?
-
-[1] Investigate
-[2] Go back to sleep
