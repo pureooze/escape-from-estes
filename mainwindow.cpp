@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->lineEdit, SIGNAL(editingFinished()), this, SLOT(someSlot()));
     setupStateMachine();
 }
 
@@ -28,6 +29,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::setupStateMachine()
 {
+    this->setWindowTitle(QString("Excape From Estes"));
+
     QStateMachine *machine = new QStateMachine(this);
     QState *s1 = new QState();
     QState *s2 = new QState();
@@ -37,8 +40,8 @@ void MainWindow::setupStateMachine()
     s2->assignProperty(ui->label, "text", "In state s2");
     s3->assignProperty(ui->label, "text", "In state s3");
 
-    s1->addTransition(this->ui->pushButton, SIGNAL(clicked()), s2);
-    s2->addTransition(this->ui->pushButton, SIGNAL(clicked()), s3);
+    s1->addTransition(this, SIGNAL(one()), s2);
+    s1->addTransition(this, SIGNAL(two()), s3);
     s3->addTransition(this->ui->pushButton, SIGNAL(clicked()), s1);
 
     machine->addState(s1);
@@ -64,4 +67,18 @@ QString MainWindow::readFile(QString data)
     file.close();
     return line;
 
+}
+
+void MainWindow::someSlot()
+{
+    if(ui->lineEdit->text() == "1")
+    {
+        qDebug() << "one";
+        emit one();
+    }else if(ui->lineEdit->text() == "2"){
+        qDebug() << "two";
+        emit two();
+    }else{
+        qDebug() << "none";
+    }
 }

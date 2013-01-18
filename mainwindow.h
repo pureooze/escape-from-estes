@@ -16,9 +16,18 @@ public:
     ~MainWindow();
     void setupStateMachine();
     QString readFile(QString file);
+    QString x;
     
+signals:
+    void one();
+    void two();
+
+private slots:
+    void someSlot();
+
 private:
     Ui::MainWindow *ui;
 };
+
 
 #endif // MAINWINDOW_H
