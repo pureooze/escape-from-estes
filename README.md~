@@ -8,7 +8,7 @@ Previously there were no plans of using a GUI but I have discovered, to my great
 develop a state machine (mainly by already having a StateMachine class ready).
 
 ##Installation
-At the moment you will have to compile from source using an IDE or manually if you wish. If you wish to just download a binary please visit https://sourceforge.net/projects/escapefromestes/
+At the moment you will have to compile from source using an IDE or manually if you wish. If you wish to just download a binary please visit
 
 ##License
 
